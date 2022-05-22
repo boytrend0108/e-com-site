@@ -1,0 +1,138 @@
+.reg_section {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: $media-phone) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.reg_section_item {
+    flex-grow: 1;
+}
+
+.reg_section_form_title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.reg_section_form_field {
+    width: 360px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    outline: none;
+    &::placeholder {
+        color: #A4A4A4;
+    }
+    @media(max-width: $media-phone) {
+        width: 100%;
+    }
+}
+
+.field_radio {
+    padding: 30px 0;
+}
+
+.radio_circle {
+    width: 17px;
+    height: 17px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.reg_section_form {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    max-width: 360px;
+}
+
+.reg_section_form_btn {
+    background-color: #F16D7F;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 17px 20px;
+    margin: 40px 0 95px;
+    transition: 0.5s;
+    &:hover {
+        @include hover-button;
+        @include hover-tranform;
+    }
+    &:after {
+        content: "   \f061";
+        font-family: fontawesome;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+
+.reg_section_text {
+    max-width: 650px;
+    @media(max-width: $media-tablet) {
+        margin-left: 25px;
+    }
+    @media(max-width: $media-phone) {
+        margin-left: 0px;
+    }
+}
+
+.reg_section_text_title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.reg_section_text_text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 20px;
+    @media(max-width: $media-tablet) {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    @media(max-width: $media-phone) {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+}
+
+.reg_section_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reg_section_li {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    display: flex;
+}
+
+.reg_section_li .fa-check {
+    font-family: fontawesome;
+    margin-right: 15px;
+    @media(max-width: $media-tablet) {
+        font-size: 16px;
+    }
+    @media(max-width: $media-phone) {
+        font-size: 16px;
+    }
+}

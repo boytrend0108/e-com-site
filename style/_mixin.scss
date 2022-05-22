@@ -1,0 +1,24 @@
+@mixin list-stile {
+    list-style: none;
+}
+
+@mixin link-stile {
+    color: inherit;
+    text-decoration: none;
+}
+
+@mixin button-stile {
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+@mixin hover-tranform {
+    transform: scale(1.1);
+}
+
+@mixin hover-button {
+    color: white;
+    background-color: $main-color;
+}

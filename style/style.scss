@@ -1,0 +1,122 @@
+/* Variables */
+
+@import '_var.scss';
+
+/*ПРИМЕСИ*/
+
+@import '_mixin.scss';
+
+/* MAIN CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    /*для прижатия футера к низу*/
+    min-height: 100vh;
+    margin: 0;
+}
+
+.site-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+summary {
+    display: block;
+}
+
+p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.fa-regular,
+.fa-light,
+.fa-thin {
+    font-style: normal;
+    color: white;
+    font-size: 26px;
+    transition: 0.5s;
+    &:hover {
+        @include hover-tranform;
+        color: $main-color;
+    }
+}
+
+i {
+    font-family: fontawesome !important;
+}
+
+
+/*PAGE SCC */
+
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+    transition: 1s;
+    @media (max-width: $media-tablet) {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+    @media (max-width: $media-phone) {
+        max-width: 375px;
+        padding: 0 16px;
+    }
+}
+
+
+/*Header*/
+
+@import 'blocks/header';
+
+/*Offer*/
+
+@import 'blocks/offer';
+
+/*Category*/
+
+@import 'blocks/category';
+
+/*Products*/
+
+@import 'blocks/products';
+
+/*Advantage*/
+
+@import 'blocks/advantage';
+
+/*Subscribe*/
+
+@import 'blocks/subscribe';
+
+/*Footer*/
+
+@import 'blocks/footer';
+
+/*Cart*/
+
+@import 'blocks/cart';
+
+/*registration*/
+
+@import "blocks/reg";

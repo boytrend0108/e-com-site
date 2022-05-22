@@ -1,0 +1,137 @@
+.category2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    @media(max-width: $media-tablet) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    @media(max-width: $media-phone) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Заголовок виден только для поисковых систем*/
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -99999px;
+    margin: -1px;
+}
+
+.category_link {
+    @include link-stile();
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Рассотяние между li*/
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        @include hover-tranform;
+    }
+    @media (max-width: $media-tablet) {
+        width: 230px;
+        height: 165px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    @media (max-width:$media-phone) {
+        width: 100%;
+    }
+}
+
+.category_link2 {
+    margin-bottom: 20px;
+    @include link-stile();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Рассотяние между li*/
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        @include hover-tranform;
+    }
+    @media(max-width: $media-tablet) {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+/* Добавляем видео на бекграуд*/
+
+.acc_img_2 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background: none;
+    transition: 1s;
+    @media(max-width: $media-tablet) {
+        height: 120px;
+    }
+}
+
+
+/*------------------------------*/
+
+.women_img {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/category_women.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.category_subtitle {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.category_title {
+    color: $main-color;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.men_img {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/category_men.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.kids_img {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/category_kids.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.acc_img {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/category_acces.jpg);
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center left;
+    @media(max-width: $media-tablet) {
+        height: 120px;
+    }
+}

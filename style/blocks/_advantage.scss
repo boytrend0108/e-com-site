@@ -1,0 +1,86 @@
+.advantage {
+    background-color: #222224;
+    color: white;
+}
+
+.advantage_box {
+    min-height: 341px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    @media(max-width: $media-tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+}
+
+.advantage_item_delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 37%;
+    @media(max-width: $media-tablet) {
+        background-position-y: 0;
+    }
+}
+
+.advantage_item {
+    flex-grow: 1;
+    flex-basis: 350px;
+    @media(max-width: $media-tablet) {
+        flex-basis: 0;
+    }
+    @media(max-width: $media-phone) {
+        flex-basis: 0;
+    }
+}
+
+.advantage_item_sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 37%;
+    @media(max-width: $media-tablet) {
+        margin: 50px 0;
+    }
+}
+
+.advantage_item_quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 37%;
+}
+
+.advantage_title {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/*подровнять картинку по середине*/
+
+.free_del {
+    margin-top: 15px;
+}
+
+.advantage_text {
+    text-align: center;
+    max-width: 350px;
+}

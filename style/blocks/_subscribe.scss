@@ -1,0 +1,96 @@
+.subscribe {
+    background-image: url(../img/subscribe_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+.subscribe_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    @media(max-width: $media-tablet) {
+        justify-content: center;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.subscribe_comment {
+    height: 225px;
+    max-width: 360px;
+    background-image: url(../img/subscribe_photo.png);
+    background-repeat: no-repeat;
+    padding-top: 136px;
+    background-position-x: center;
+}
+
+.subscribe_text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    font-style: italic;
+}
+
+.subscribe_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subsubscribe_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 35px;
+}
+
+.subscribe_button {
+    padding-top: 50px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+    &:hover {
+        @include hover-tranform();
+    }
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: $main-color;
+    height: 48px;
+    border-radius: 0 20px 20px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.button_fild {
+    width: 100%;
+    height: 48px;
+    text-align: left;
+    border-radius: 20px 0 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #E1E1E1;
+    border: none;
+    outline: none;
+}
+
+.button_fild::placeholder {
+    color: $placeholder-color;
+}
