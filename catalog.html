@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Каталог</title>
     <script src="https://kit.fontawesome.com/6675edce11.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <div class="conteiner header-conteiner">
             <nav class="header_links">
                 <div class="logo">
-                    <a class="logo_img" href="#"><img class="header_img_svg" src="img/logo.svg" alt="logo"></a>
+                    <a class="logo_img" href="index.html"><img class="header_img_svg" src="img/logo.svg" alt="logo"></a>
                     <a href="catalog.html" class="search_button">
                         <i class="fa-light fa-magnifying-glass"></i></a>
                 </div>
@@ -103,42 +103,103 @@
             </nav>
         </div>
     </header>
-    <section class="offer ">
-        <div class="conteiner offer_conteiner">
-            <div class="title swing-in-top-fwd">
-                <div class="title_text">
-                    <h1 class="offer_title">THE BRAND </h1>
-                    <h2 class="offer_subtitle"> OF LUXERIOUS <span class="color_h1_offer"> FASHION</span></h2>
-                </div>
-            </div>
-        </div>
+    <section class="offer_catalog_section">
+        <nav class="conteiner catalog_offer">
+            <h1 class="catalog_offer_title scale-in-hor-left">NEW ARRIVALS </h1>
+            <ul class="catalog_offer_list scale-in-hor-right">
+                <li class="catalog_offer_navy"> <a class="catalog_offer_navy_link" href="index.html"> HOME</a> </li>
+                <li class="catalog_offer_navy"><a class="catalog_offer_navy_link" href="#"> MEN</a> </li>
+                <li class="catalog_offer_navy_active"> NEW ARRIVALS </li>
+            </ul>
+        </nav>
     </section>
     <main class="site-main">
         <div class="conteiner">
-            <h2 class="hidden">Category</h2>
-            <ul class="category2">
-                <li class="category_link women_img">
-                    <p class="category_subtitle">30% OFF</p>
-                    <h3 class="category_title">FOR WOMEN</h3>
-                </li>
-                <li class="category_link men_img">
-                    <p class="category_subtitle">HOT DEAL</p>
-                    <h3 class="category_title">FOR MEN</h3>
-                </li>
-                <li class="category_link kids_img">
-                    <p class="category_subtitle">NEW ARRIVALS </p>
-                    <h3 class="category_title">FOR KIDS</h3>
-                </li>
-
-            </ul>
-            <div class="category_link2 acc_img">
-                <p class="category_subtitle">LUXIROUS & TRENDY</p>
-                <h3 class="category_title">ACCESUARY</h3>
-            </div>
-
             <section class="products">
-                <h2 class="product_title">Fetured Items</h2>
-                <p class="product_subtitle">Shop for items based on what we featured in this week</p>
+                <nav class="catalog_prodacts_header">
+                    <details class="details_filter">
+                        <summary class="catalog_products_filter">filter</summary>
+                        <div class="filter_box">
+                            <details>
+                                <summary class="catalog_products_summary">category</summary>
+                                <ul class="filter_list">
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary class="catalog_products_summary">brand</summary>
+                                <ul class="filter_list">
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary class="catalog_products_summary">designer</summary>
+                                <ul class="filter_list">
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                    <li class="filter_li">Accessories</li>
+                                    <li class="filter_li">Bags</li>
+                                    <li class="filter_li">Hoodies & Sweatshirts</li>
+                                    <li class="filter_li">Jackets & Coats</li>
+                                    <li class="filter_li">Polos</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </details>
+
+                    <nav class="catalog_prodacts_filter_right">
+                        <details class="details_filter ">
+                            <summary class="product_slider_selector_summary">tranding now</summary>
+                            <div class="filter_list filter_box-right product__checkbox-wrapper ">
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text"> Hoodies & Sweatshirts</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">Jackets & Coats</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">Polos</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">Bags</span></label>
+                            </div>
+                        </details>
+
+                        <details class="details_filter ">
+                            <summary class="product_slider_selector_summary">size</summary>
+                            <div class="filter_list filter_box-right product__checkbox-wrapper ">
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">s</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">xs</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">m</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">l</span></label>
+                            </div>
+                        </details>
+                        <details class="details_filter ">
+                            <summary class="product_slider_selector_summary">price</summary>
+                            <div class="filter_list filter_box-right product__checkbox-wrapper ">
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">1000</span> </label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">2000</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">3000</span></label>
+                                <label class="product__checkbox-lebel"><input type="checkbox" ><span class="product__checkbox_text">4000</span></label>
+                            </div>
+                        </details>
+                    </nav>
+
+                </nav>
                 <div class="products_box">
                     <h2 class="hidden">Products</h2>
                     <article class="products_cart">
@@ -251,6 +312,66 @@
                         </button>
                                 </div>
                                 <img class="products_cart_img" src="img/products_cart_6.png" alt="products_cart">
+                            </div>
+                            <div class="products_box_text">
+
+                                <h3 class="products_cart_title">ELLERY X M'O CAPSULE</h3>
+                                <p class="products_cart_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="products_cart_price">$52.00</p>
+                    </article>
+                    <article class="products_cart">
+                        <div class="produckts__textbox-wraper">
+                            <div class="img_box">
+                                <div class="overlay_hiden">
+                                    <button class="products_cart_button">
+                            <svg class="overlay_hiden_cart_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512"><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg>
+                            Add to Cart
+                        </button>
+                                </div>
+                                <img class="products_cart_img" src="img/products_cart_7.png" alt="products_cart">
+                            </div>
+                            <div class="products_box_text">
+
+                                <h3 class="products_cart_title">ELLERY X M'O CAPSULE</h3>
+                                <p class="products_cart_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="products_cart_price">$52.00</p>
+                    </article>
+                    <article class="products_cart">
+                        <div class="produckts__textbox-wraper">
+                            <div class="img_box">
+                                <div class="overlay_hiden">
+                                    <button class="products_cart_button">
+                            <svg class="overlay_hiden_cart_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512"><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg>
+                            Add to Cart
+                        </button>
+                                </div>
+                                <img class="products_cart_img" src="img/products_cart_8.png" alt="products_cart">
+                            </div>
+                            <div class="products_box_text">
+
+                                <h3 class="products_cart_title">ELLERY X M'O CAPSULE</h3>
+                                <p class="products_cart_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="products_cart_price">$52.00</p>
+                    </article>
+                    <article class="products_cart">
+                        <div class="produckts__textbox-wraper">
+                            <div class="img_box">
+                                <div class="overlay_hiden">
+                                    <button class="products_cart_button">
+                            <svg class="overlay_hiden_cart_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512"><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg>
+                            Add to Cart
+                        </button>
+                                </div>
+                                <img class="products_cart_img" src="img/products_cart_9.png" alt="products_cart">
                             </div>
                             <div class="products_box_text">
 
