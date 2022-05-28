@@ -972,8 +972,6 @@ i {
   top: -2px;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition-duration: cubic-bezier(0.07, 0.41, 0.17, 0.97);
-          transition-duration: cubic-bezier(0.07, 0.41, 0.17, 0.97);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transition-delay: 0.3s;
@@ -1532,111 +1530,39 @@ i {
 
 /*Пагинация на страницах каталога*/
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.pagination_list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  padding: 10px 20px 10px 20px;
-  border: 1px solid #C4C4C4;
-  -webkit-box-shadow: 0px 4px 4px rgba(110, 13, 13, 0.25);
-          box-shadow: 0px 4px 4px rgba(110, 13, 13, 0.25);
-  border-radius: 5px;
-  /* align arrows and numbers*/
+.page-item .my-page-link {
+  color: #C4C4C4;
 }
 
-.pagination_list :nth-child(2) {
-  padding-left: 0;
-}
-
-.pagination_list :first-child {
-  padding-top: 1px;
-  padding-left: 0;
-}
-
-.pagination_list :last-child {
-  padding-left: 0;
-}
-
-.pagination_li {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 20px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.pagination_li:hover {
+.page-item .my-page-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.pagination_link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.pagination_link:hover {
   color: #EF5B70;
 }
 
-.pag_link_active {
+.page-item .my-page-link2 {
+  color: #222222;
+}
+
+.page-item .my-page-link2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #EF5B70;
+}
+
+.page-item .active {
   color: #F16D7F;
-  font-weight: bold;
 }
 
-.pagination_arrow {
-  margin-top: 3px;
-}
-
-/*Добавляем левую стрелку с помощью FontAwesome*/
-.pagination_list .fa-angle-right {
-  color: #000;
-  font-size: 19px;
-  padding-left: 10px;
-  list-style: none;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.pagination_list .fa-angle-right:hover {
-  color: #EF5B70;
+.page-item .active:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.fa-angle-left {
-  color: #000;
-  font-size: 19px;
-  padding-right: 10px;
-  list-style: none;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.fa-angle-left:hover {
   color: #EF5B70;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 /*---- page Product-----*/

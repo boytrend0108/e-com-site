@@ -37,7 +37,6 @@
         position: absolute;
         top: -2px;
         transform: scale(0);
-        transition-duration: cubic-bezier(.07, .41, .17, .97);
         transform-origin: top left;
         transition-delay: 0.3s;
         transition-duration: 1s;
@@ -462,86 +461,30 @@
     /*Пагинация на страницах каталога*/
     
     .pagination {
-        display: flex;
-        padding-left: 0;
-        list-style: none;
-        align-content: center;
         justify-content: center;
     }
     
-    .pagination_list {
-        @include list-stile();
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        padding: 10px 20px 10px 20px;
-        border: 1px solid #C4C4C4;
-        box-shadow: (0px 4px 4px rgba(110, 13, 13, 0.25));
-        border-radius: 5px;
-        /* align arrows and numbers*/
-        & :nth-child(2) {
-            padding-left: 0;
-        }
-        & :first-child {
-            padding-top: 1px;
-            padding-left: 0;
-        }
-        & :last-child {
-            padding-left: 0;
-        }
-    }
-    
-    .pagination_li {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        padding-left: 20px;
-        transition-duration: 0.5s;
+    .page-item .my-page-link {
+        color: #C4C4C4;
         &:hover {
-            @include hover-tranform ();
-        }
-    }
-    
-    .pagination_link {
-        @include link-stile();
-        &:hover {
+            @include hover-tranform;
             color: #EF5B70;
         }
     }
     
-    .pag_link_active {
-        color: $main-color;
-        font-weight: bold;
-    }
-    
-    .pagination_arrow {
-        margin-top: 3px;
-    }
-    /*Добавляем левую стрелку с помощью FontAwesome*/
-    
-    .pagination_list .fa-angle-right {
-        color: #000;
-        font-size: 19px;
-        padding-left: 10px;
-        @include list-stile();
-        cursor: pointer;
-        transition-duration: 0.5s;
+    .page-item .my-page-link2 {
+        color: #222222;
         &:hover {
+            @include hover-tranform;
             color: #EF5B70;
-            @include hover-tranform();
         }
     }
     
-    .fa-angle-left {
-        color: #000;
-        font-size: 19px;
-        padding-right: 10px;
-        @include list-stile();
-        cursor: pointer;
-        transition-duration: 0.5s;
+    .page-item .active {
+        color: #F16D7F;
         &:hover {
+            @include hover-tranform;
             color: #EF5B70;
-            @include hover-tranform();
         }
     }
     /*---- page Product-----*/
