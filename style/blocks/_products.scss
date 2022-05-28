@@ -79,20 +79,6 @@
     color: $main-color;
 }
 
-.filter_box-right {
-    z-index: 1;
-    background-color: white;
-    width: auto;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    @media(max-width: $media-phone) {
-        left: -14%;
-    }
-}
-
-.filter_list {
-    list-style-type: none;
-}
-
 .hidden_ditails {
     padding: 10px;
     display: flex;
@@ -321,12 +307,67 @@
     }
 }
 
-.catalog_prodacts_filter_right {
+.selector {
     display: flex;
     margin: 0 auto;
     z-index: 1;
     @media(max-width: $media-tablet) {
         margin: 0;
+    }
+}
+
+.details_filter {
+    position: relative;
+    &:hover .product__checkbox-wrapper {
+        transform: scale(1);
+    }
+}
+
+.product_slider_selector_summary {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    display: block;
+    margin-bottom: 10px;
+    transition: 1s;
+    text-transform: uppercase;
+    margin-right: 15px;
+    cursor: pointer;
+    &:after {
+        content: '\f107';
+        font-family: fontawesome;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    &:hover {
+        @include hover-tranform;
+        color: #EF5B70;
+    }
+}
+
+.product__checkbox-wrapper {
+    position: absolute;
+    transform-origin: top left;
+    transform: scale(0);
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 16px;
+}
+
+.filter_list {
+    list-style-type: none;
+}
+
+.filter_box-right {
+    z-index: 1;
+    background-color: white;
+    width: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    @media(max-width: $media-phone) {
+        left: -14%;
     }
 }
 
@@ -625,38 +666,8 @@
     }
 }
 
-.product_slider_selector_summary {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    display: block;
-    margin-bottom: 10px;
-    transition: 1s;
-    text-transform: uppercase;
-    margin-right: 15px;
-    cursor: pointer;
-    &:after {
-        content: '\f107';
-        font-family: fontawesome;
-        margin-left: 10px;
-        font-size: 17px;
-    }
-    &:hover {
-        @include hover-tranform;
-        color: #EF5B70;
-    }
-}
-
 .fa-solid .fa-angle-down {
     font-size: large;
-}
-
-.product__checkbox-wrapper {
-    display: flex;
-    flex-direction: column;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 7px;
 }
 
 .product__checkbox-lebel {
