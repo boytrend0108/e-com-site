@@ -26,7 +26,6 @@
 }
 
 .filter[open] .catalog_products_filter {
-    /*+*/
     color: #EF5B70;
     &:hover {
         @include hover-tranform;
@@ -38,6 +37,7 @@
 
 .filter__box {
     position: absolute;
+    top: -2px;
     transform: scale(0);
     transform-origin: top left;
     transition: 1s;
@@ -50,8 +50,27 @@
     }
 }
 
+.filter__box-title {
+    display: block;
+    padding: 10px 10px 0;
+    color: $main-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    &:after {
+        content: "\f160";
+        margin-left: 5px;
+        font-family: fontawesome;
+    }
+}
+
 .filter:hover .filter__box {
     transform: scale(1);
+}
+
+.filter:hover .filter__title {
+    color: $main-color;
 }
 
 .filter_box-right {
@@ -337,7 +356,6 @@
 }
 
 .filter__title {
-    /**/
     display: block;
     padding: 0 10px 0;
     transition: 0.5s;

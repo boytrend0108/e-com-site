@@ -953,7 +953,6 @@ i {
 }
 
 .filter[open] .catalog_products_filter {
-  /*+*/
   color: #EF5B70;
 }
 
@@ -970,6 +969,7 @@ i {
 
 .filter__box {
   position: absolute;
+  top: -2px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transform-origin: top left;
@@ -989,9 +989,29 @@ i {
   }
 }
 
+.filter__box-title {
+  display: block;
+  padding: 10px 10px 0;
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.filter__box-title:after {
+  content: "\f160";
+  margin-left: 5px;
+  font-family: fontawesome;
+}
+
 .filter:hover .filter__box {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.filter:hover .filter__title {
+  color: #F16D7F;
 }
 
 .filter_box-right {
@@ -1369,7 +1389,6 @@ i {
 }
 
 .filter__title {
-  /**/
   display: block;
   padding: 0 10px 0;
   -webkit-transition: 0.5s;
