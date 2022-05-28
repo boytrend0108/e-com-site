@@ -20,11 +20,12 @@
 
 /*плавно открываем Дитейлс*/
 
-.details_filter {
+.filter {
     position: relative;
+    cursor: pointer;
 }
 
-.details_filter[open] .catalog_products_filter {
+.filter[open] .catalog_products_filter {
     /*+*/
     color: #EF5B70;
     &:hover {
@@ -35,7 +36,11 @@
     }
 }
 
-.filter_box {
+.filter__box {
+    position: absolute;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 1s;
     z-index: 1;
     background-color: white;
     width: 360px;
@@ -43,6 +48,10 @@
     @media(max-width: $media-phone) {
         left: -14%;
     }
+}
+
+.filter:hover .filter__box {
+    transform: scale(1);
 }
 
 .filter_box-right {
@@ -327,12 +336,16 @@
     cursor: pointer;
 }
 
-.catalog_products_filter {
+.filter__title {
     /**/
     display: block;
     padding: 0 10px 0;
     transition: 0.5s;
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
     &:after {
         content: "\f160";
         margin-left: 5px;

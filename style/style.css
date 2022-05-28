@@ -947,27 +947,35 @@ i {
 }
 
 /*плавно открываем Дитейлс*/
-.details_filter {
+.filter {
   position: relative;
+  cursor: pointer;
 }
 
-.details_filter[open] .catalog_products_filter {
+.filter[open] .catalog_products_filter {
   /*+*/
   color: #EF5B70;
 }
 
-.details_filter[open] .catalog_products_filter:hover {
+.filter[open] .catalog_products_filter:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
-  .details_filter[open] .catalog_products_filter {
+  .filter[open] .catalog_products_filter {
     color: transparent;
   }
 }
 
-.filter_box {
+.filter__box {
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: 1s;
+  transition: 1s;
   z-index: 1;
   background-color: white;
   width: 360px;
@@ -976,9 +984,14 @@ i {
 }
 
 @media (max-width: 800px) {
-  .filter_box {
+  .filter__box {
     left: -14%;
   }
+}
+
+.filter:hover .filter__box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .filter_box-right {
@@ -1355,22 +1368,26 @@ i {
   cursor: pointer;
 }
 
-.catalog_products_filter {
+.filter__title {
   /**/
   display: block;
   padding: 0 10px 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
-.catalog_products_filter:after {
+.filter__title:after {
   content: "\f160";
   margin-left: 5px;
   font-family: fontawesome;
 }
 
-.catalog_products_filter:hover {
+.filter__title:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #F16D7F;
