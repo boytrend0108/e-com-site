@@ -1005,6 +1005,10 @@ i {
   font-family: fontawesome;
 }
 
+.filter__detail {
+  padding-left: 10px;
+}
+
 .filter:hover .filter__box {
   -webkit-transform: scale(1);
           transform: scale(1);
