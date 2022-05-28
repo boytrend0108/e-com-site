@@ -39,8 +39,10 @@
     position: absolute;
     top: -2px;
     transform: scale(0);
+    transition-duration: cubic-bezier(.07, .41, .17, .97);
     transform-origin: top left;
-    transition: 1s;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
     z-index: 1;
     background-color: white;
     width: 360px;

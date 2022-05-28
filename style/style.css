@@ -972,10 +972,14 @@ i {
   top: -2px;
   -webkit-transform: scale(0);
           transform: scale(0);
+  -webkit-transition-duration: cubic-bezier(0.07, 0.41, 0.17, 0.97);
+          transition-duration: cubic-bezier(0.07, 0.41, 0.17, 0.97);
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   z-index: 1;
   background-color: white;
   width: 360px;
