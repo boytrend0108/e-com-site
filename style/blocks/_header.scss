@@ -1,12 +1,12 @@
 .header {
     background-color: #222222;
-    color: white;
+    color: rgb(87, 76, 76);
     padding: 18px 0;
-    height: 75px;
+    height: 76px;
 }
 
 .header-conteiner {
-    @media(max-width: $media-phone) {
+    @media (max-width: $media-phone) {
         position: relative;
     }
 }
@@ -42,7 +42,9 @@
     align-items: center;
     width: 170px;
     justify-content: space-between;
-    @media(max-width: $media-phone) {
+    position: relative;
+
+    @media (max-width: $media-phone) {
         justify-content: flex-end;
         width: 360px;
     }
@@ -61,11 +63,11 @@
 .busket_img:hover .busket__number {
     @include hover-tranform;
     background-color: white;
-    color: #F16D7F;
+    color: #f16d7f;
 }
 
 .busket__number {
-    background-color: #F16D7F;
+    background-color: #f16d7f;
     border-radius: 50%;
     width: 17px;
     height: 17px;
@@ -86,13 +88,85 @@
 
 .burger_detail {
     position: relative;
-    @media(max-width: $media_phone) {
+
+    @media (max-width: $media_phone) {
         position: static;
     }
 }
 
 .busket .fa-bars {
     font-family: fontawesome;
+}
+
+.busketWrapper {
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: white;
+    z-index: 3;
+}
+
+.busketItemBoxHeader {
+    display: grid;
+    grid-template-columns: 200px 114px 108px 70px;
+}
+
+.busketItemBox {
+    display: grid;
+    grid-template-columns: 200px 114px 108px 70px;
+
+}
+
+.busketItemHeader {
+    text-align: center;
+    padding: 10px;
+
+    font-weight: bold;
+    outline: 1px solid darkblue;
+
+}
+
+.busketItem {
+    outline: 1px solid darkblue;
+    text-align: center;
+    padding: 10px;
+    width: max-content;
+    font-weight: bold;
+    width: inherit;
+}
+
+.busketItemBoxFooter {
+    outline: 1px solid darkblue;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+}
+
+.busketItemFooter {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    width: inherit;
+    font-weight: bold;
+    outline: 1px solid darkblue;
+}
+
+.delete {
+
+    text-align: end;
+    outline: 1px solid darkblue;
+    width: 246%;
+}
+
+.deletebtn {
+    color: #f16d7f;
+    font-weight: bold;
+    transition: 1s;
+
+
+    &:hover {
+        @include hover-tranform;
+        color: #292626;
+    }
 }
 
 .burger_menu {
@@ -107,10 +181,12 @@
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
     animation: scale-in-tl;
     animation-duration: 2s;
-    @media(max-width: $media-tablet) {
+
+    @media (max-width: $media-tablet) {
         left: -225%;
     }
-    @media(max-width: $media-phone) {
+
+    @media (max-width: $media-phone) {
         left: 0px;
         width: 100%;
         z-index: 2;
@@ -123,6 +199,7 @@
         transform-origin: 0% 0%;
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         transform-origin: 0% 0%;
@@ -139,11 +216,11 @@
 }
 
 .burger_menu_list_title {
-    color: #F16D7F;
+    color: #f16d7f;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: #f16d7f;
 }
 
 .x_mark_burger {
@@ -151,9 +228,10 @@
     right: 21px;
     top: 0;
     transition: 0.5s;
+
     &:hover {
         @include hover-tranform;
-        fill: #F16D7F;
+        fill: #f16d7f;
     }
 }
 
@@ -161,11 +239,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: #f16d7f;
     list-style-type: none;
+
     & :first-child {
         margin-top: 20px;
     }
+
     & :last-child {
         margin-bottom: 20px;
     }
@@ -177,6 +257,7 @@
     font-size: 14px;
     line-height: 17px;
     transition: 0.5s;
+
     &:hover {
         transform: translateX(15px) scale(1.05);
     }
@@ -184,22 +265,24 @@
 
 .burger_menu_link {
     text-decoration: none;
-    color: #6F6E6E;
+    color: #6f6e6e;
+
     &:hover {
         transform: translateX(15px) scale(1.05);
-        color: #F16D7F;
+        color: #f16d7f;
     }
 }
 
 .busket_img {
     margin-right: 00px;
     transition: 1s;
-    @media(max-width: $media_phone) {
+
+    @media (max-width: $media_phone) {
         width: 1px;
         height: 1px;
         position: absolute;
         margin: -1px;
-        left: -9999px
+        left: -9999px;
     }
 }
 
